@@ -1,0 +1,139 @@
+[
+  {
+    "slug": "longmen-main",
+    "out": "C:\\Users\\Administrator\\Documents\\Codex\\2026-07-19\\xian\\work\\promotion-site\\assets\\longmen-main.jpg",
+    "size": [
+      1920,
+      1080
+    ],
+    "web_size": [
+      1800,
+      1012
+    ]
+  },
+  {
+    "slug": "longmen-concept",
+    "out": "C:\\Users\\Administrator\\Documents\\Codex\\2026-07-19\\xian\\work\\promotion-site\\assets\\longmen-concept.jpg",
+    "size": [
+      4961,
+      7890
+    ],
+    "web_size": [
+      1132,
+      1800
+    ]
+  },
+  {
+    "slug": "longmen-register",
+    "out": "C:\\Users\\Administrator\\Documents\\Codex\\2026-07-19\\xian\\work\\promotion-site\\assets\\longmen-register.jpg",
+    "size": [
+      7087,
+      9449
+    ],
+    "web_size": [
+      1350,
+      1800
+    ]
+  },
+  {
+    "slug": "rongchuang-wall",
+    "src": "E:\\图片\\融创展示墙.jpg",
+    "error": "DecompressionBombError('Image size (527652411 pixels) exceeds limit of 178956970 pixels, could be decompression bomb DOS attack.')"
+  },
+  {
+    "slug": "rongchuang-open",
+    "out": "C:\\Users\\Administrator\\Documents\\Codex\\2026-07-19\\xian\\work\\promotion-site\\assets\\rongchuang-open.jpg",
+    "size": [
+      4396,
+      6213
+    ],
+    "web_size": [
+      1274,
+      1800
+    ]
+  },
+  {
+    "slug": "rongchuang-poster",
+    "out": "C:\\Users\\Administrator\\Documents\\Codex\\2026-07-19\\xian\\work\\promotion-site\\assets\\rongchuang-poster.jpg",
+    "size": [
+      2482,
+      3508
+    ],
+    "web_size": [
+      1274,
+      1800
+    ]
+  },
+  {
+    "slug": "report-sign",
+    "out": "C:\\Users\\Administrator\\Documents\\Codex\\2026-07-19\\xian\\work\\promotion-site\\assets\\report-sign.jpg",
+    "size": [
+      7087,
+      9449
+    ],
+    "web_size": [
+      1350,
+      1800
+    ]
+  },
+  {
+    "slug": "report-banner",
+    "out": "C:\\Users\\Administrator\\Documents\\Codex\\2026-07-19\\xian\\work\\promotion-site\\assets\\report-banner.jpg",
+    "size": [
+      14173,
+      1701
+    ],
+    "web_size": [
+      1800,
+      216
+    ]
+  },
+  {
+    "slug": "photo-review",
+    "out": "C:\\Users\\Administrator\\Documents\\Codex\\2026-07-19\\xian\\work\\promotion-site\\assets\\photo-review.jpg",
+    "size": [
+      4464,
+      2976
+    ],
+    "web_size": [
+      1800,
+      1200
+    ]
+  },
+  {
+    "slug": "photo-teacher",
+    "out": "C:\\Users\\Administrator\\Documents\\Codex\\2026-07-19\\xian\\work\\promotion-site\\assets\\photo-teacher.jpg",
+    "size": [
+      5040,
+      3360
+    ],
+    "web_size": [
+      1800,
+      1200
+    ]
+  },
+  {
+    "slug": "photo-course",
+    "out": "C:\\Users\\Administrator\\Documents\\Codex\\2026-07-19\\xian\\work\\promotion-site\\assets\\photo-course.jpg",
+    "size": [
+      6720,
+      4480
+    ],
+    "web_size": [
+      1800,
+      1200
+    ]
+  },
+  {
+    "slug": "space-painting",
+    "out": "C:\\Users\\Administrator\\Documents\\Codex\\2026-07-19\\xian\\work\\promotion-site\\assets\\space-painting.jpg",
+    "size": [
+      6480,
+      4766
+    ],
+    "web_size": [
+      1800,
+      1324
+    ]
+  }
+]
