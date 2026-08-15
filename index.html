@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
@@ -483,6 +483,10 @@
       grid-template-columns: 0.84fr 1fr;
     }
 
+    #results .section-head {
+      grid-template-columns: 1fr;
+    }
+
     .kicker {
       margin: 0 0 11px;
       color: rgba(217, 180, 255, 0.85);
@@ -497,6 +501,11 @@
       line-height: 0.98;
       font-weight: 600;
       letter-spacing: 0;
+    }
+
+    #results .section-head h2 {
+      white-space: nowrap;
+      font-size: clamp(28px, 4.2vw, 54px);
     }
 
     #team .section-head h2 {
@@ -1079,6 +1088,11 @@
         grid-column: span 6;
       }
 
+      #results .section-head h2 {
+        white-space: nowrap;
+        font-size: clamp(26px, 7vw, 48px);
+      }
+
       #results .result-summary {
         grid-template-columns: 1fr;
         gap: 24px;
@@ -1322,7 +1336,7 @@
 
           <div class="bento results-grid">
             <article class="spotlight bento-card metric-card reveal">
-              <span class="number count-up" data-count="150" data-suffix="+">0+</span>
+              <span class="number count-up" data-count="150" data-suffix="套">0套</span>
               <div>
                 <h3>品牌宣传物料</h3>
                 <p>覆盖招生海报、长图、公众号配图、节日活动物料等，保障全年营销节点视觉供应。</p>
