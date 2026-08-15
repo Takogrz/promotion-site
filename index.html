@@ -487,6 +487,42 @@
       grid-template-columns: 1fr;
     }
 
+    #growth .section-head {
+      grid-template-columns: 1fr;
+      gap: 18px;
+      align-items: start;
+      max-width: 1040px;
+    }
+
+    #growth .section-head h2 {
+      white-space: nowrap;
+      font-size: 58px;
+      line-height: 1.02;
+    }
+
+    #growth .section-lede {
+      max-width: 920px;
+    }
+
+    #growth .bento {
+      grid-template-columns: 1fr;
+    }
+
+    #growth .bento-card.large {
+      grid-column: 1 / -1;
+      min-height: 210px;
+      padding: 28px 30px;
+    }
+
+    #growth .bento-card h3 {
+      max-width: 720px;
+      font-size: 24px;
+    }
+
+    #growth .bento-card p {
+      max-width: 960px;
+    }
+
     .kicker {
       margin: 0 0 11px;
       color: rgba(217, 180, 255, 0.85);
@@ -1140,6 +1176,10 @@
         grid-template-columns: 1fr;
       }
 
+      #growth .section-head h2 {
+        font-size: 54px;
+      }
+
       #team .section-head h2 {
         white-space: nowrap;
         font-size: clamp(30px, 8vw, 62px);
@@ -1249,6 +1289,10 @@
         font-size: clamp(38px, 13vw, 58px);
       }
 
+      #growth .section-head h2 {
+        font-size: 42px;
+      }
+
       .bento,
       .projects {
         grid-template-columns: 1fr;
@@ -1288,6 +1332,18 @@
       .footer-inner {
         flex-direction: column;
         align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 420px) {
+      #growth .section-head h2 {
+        font-size: 34px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      #growth .section-head h2 {
+        font-size: 28px;
       }
     }
   </style>
