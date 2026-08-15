@@ -1116,12 +1116,12 @@
 
     .plan-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 16px;
     }
 
     .plan-card {
-      min-height: 260px;
+      min-height: 320px;
       padding: 24px;
     }
 
@@ -1129,6 +1129,7 @@
       display: block;
       margin-bottom: 12px;
       font-size: 20px;
+      line-height: 1.35;
     }
 
     .plan-card p {
@@ -1196,6 +1197,10 @@
         font-size: clamp(30px, 7.1vw, 54px);
       }
 
+      .plan-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
       #works .section-head h2 {
         white-space: nowrap;
         font-size: clamp(30px, 7.1vw, 52px);
@@ -1225,9 +1230,6 @@
         grid-column: span 6;
       }
 
-      .plan-grid {
-        grid-template-columns: 1fr;
-      }
     }
 
     @media (max-width: 760px) {
@@ -1301,6 +1303,10 @@
 
       .bento,
       .projects {
+        grid-template-columns: 1fr;
+      }
+
+      .plan-grid {
         grid-template-columns: 1fr;
       }
 
@@ -1482,7 +1488,7 @@
               <span class="number count-up" data-count="9" data-suffix="场">0场</span>
               <div>
                 <h3>室内外软装设计</h3>
-                <p>升级校区软装。用视觉设计表达教育理念，教学环境的呈现。</p>
+                <p>升级校区软装。用视觉设计表达教育理念，提升教学环境的呈现。</p>
               </div>
             </article>
           </div>
@@ -2006,19 +2012,24 @@
 
           <div class="plan-grid">
             <article class="spotlight plan-card reveal">
-              <span class="tag">短板识别</span>
-              <strong>多线程任务管理</strong>
-              <p>在多项目并行时，偶尔会出现精力分配不均。下一步会通过优先级拆分、任务排期和阶段复盘提升稳定性。</p>
+              <span class="tag">01</span>
+              <strong>交付与目标</strong>
+              <p>首先应对当下1个月的日常工单任务100%按时交付，其次展望未来两个月，对常规工单月产出提升25%(如月产出100图提升到125图）推进优化视觉风格统一化。</p>
             </article>
             <article class="spotlight plan-card reveal">
-              <span class="tag">能力补强</span>
-              <strong>数据化运营意识</strong>
-              <p>未来希望更关注设计对点击率、转化率和到访体验的具体影响，让设计价值更可衡量。</p>
+              <span class="tag">02</span>
+              <strong>技术与审美</strong>
+              <p>技术层面将AI工具使用融入设计流程，重点在视觉提升和文字查错方面，审美层面应每周调研拆解相关优秀案例，在我擅长的仿照板块发挥最大价值，将同行优秀作品拆解运用起来。</p>
             </article>
             <article class="spotlight plan-card reveal">
-              <span class="tag">晋升规划</span>
-              <strong>设计资产库与视觉一体化</strong>
-              <p>沉淀设计组件库，统一平面海报与空间软装语言，培养新人独立承担项目，形成更稳定的设计供给能力。</p>
+              <span class="tag">03</span>
+              <strong>团队的赋能</strong>
+              <p>1.素材库，沉淀团队共同打造统一、优秀的企业风格化和模板化，2.做分享，每个周组织进行15-30分钟设计微分享（如AI技巧，排版、同行分析等）</p>
+            </article>
+            <article class="spotlight plan-card reveal">
+              <span class="tag">04</span>
+              <strong>全年规划</strong>
+              <p>对全年招生节点，节庆活动节点等常规化设计进行模板化规范搭建，实现更好的视觉表达，提升设计速率和未来对外的业务拓展。</p>
             </article>
           </div>
         </div>
