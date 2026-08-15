@@ -835,6 +835,7 @@
       place-items: center;
       overflow: hidden;
       border-radius: 11px;
+      cursor: zoom-in;
       background:
         radial-gradient(circle at 50% 0%, rgba(168, 85, 247, 0.08), transparent 46%),
         rgba(255,255,255,0.035);
@@ -855,6 +856,73 @@
     .work-card:hover img {
       transform: scale(1.025);
       filter: saturate(1) contrast(1.08);
+    }
+
+    .work-lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      display: grid;
+      place-items: center;
+      padding: 32px;
+      opacity: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 50% 20%, rgba(168, 85, 247, 0.18), transparent 30%),
+        rgba(3, 3, 7, 0.86);
+      backdrop-filter: blur(18px);
+      transition: opacity 180ms ease;
+    }
+
+    .work-lightbox.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .work-lightbox-frame {
+      width: min(1180px, 92vw);
+      max-height: 90vh;
+      display: grid;
+      gap: 14px;
+      justify-items: center;
+    }
+
+    .work-lightbox-img {
+      max-width: 100%;
+      max-height: calc(90vh - 58px);
+      object-fit: contain;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.035);
+      box-shadow: 0 28px 110px rgba(0, 0, 0, 0.62);
+    }
+
+    .work-lightbox-caption {
+      color: rgba(246, 246, 247, 0.82);
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .work-lightbox-close {
+      position: fixed;
+      top: 22px;
+      right: 24px;
+      width: 42px;
+      height: 42px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 999px;
+      color: rgba(246, 246, 247, 0.92);
+      background: rgba(12, 12, 18, 0.72);
+      font-size: 28px;
+      line-height: 1;
+      cursor: pointer;
+      transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+    }
+
+    .work-lightbox-close:hover {
+      transform: scale(1.04);
+      border-color: rgba(168, 85, 247, 0.5);
+      background: rgba(28, 20, 38, 0.82);
     }
 
     .work-card-body {
@@ -2061,6 +2129,58 @@
       });
     }
 
+    function initWorkLightbox() {
+      const lightbox = document.createElement("div");
+      lightbox.className = "work-lightbox";
+      lightbox.setAttribute("aria-hidden", "true");
+      lightbox.innerHTML = `
+        <button class="work-lightbox-close" type="button" aria-label="关闭预览">×</button>
+        <div class="work-lightbox-frame" role="dialog" aria-modal="true" aria-label="作品预览">
+          <img class="work-lightbox-img" alt="">
+          <div class="work-lightbox-caption"></div>
+        </div>
+      `;
+      document.body.appendChild(lightbox);
+
+      const previewImage = lightbox.querySelector(".work-lightbox-img");
+      const caption = lightbox.querySelector(".work-lightbox-caption");
+      const closeButton = lightbox.querySelector(".work-lightbox-close");
+
+      const close = () => {
+        lightbox.classList.remove("open");
+        lightbox.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+        previewImage.removeAttribute("src");
+      };
+
+      const open = (image) => {
+        const card = image.closest(".work-card");
+        const title = card?.querySelector(".work-card-body strong")?.textContent?.trim() || image.alt || "作品预览";
+        previewImage.src = image.currentSrc || image.src;
+        previewImage.alt = image.alt || title;
+        caption.textContent = title;
+        lightbox.classList.add("open");
+        lightbox.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+        closeButton.focus();
+      };
+
+      document.querySelector("#works")?.addEventListener("click", (event) => {
+        const image = event.target.closest(".work-card-media img");
+        if (!image) return;
+        event.preventDefault();
+        open(image);
+      });
+
+      closeButton.addEventListener("click", close);
+      lightbox.addEventListener("click", (event) => {
+        if (event.target === lightbox) close();
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && lightbox.classList.contains("open")) close();
+      });
+    }
+
     function bindMarqueeResize() {
       let resizeTimer;
       window.addEventListener("resize", () => {
@@ -2077,6 +2197,7 @@
     animateCounters();
     mergeSingleLineWorkRows();
     setupWorkMarquees();
+    initWorkLightbox();
     bindMarqueeResize();
   </script>
 </body>
