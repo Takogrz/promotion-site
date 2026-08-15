@@ -666,9 +666,11 @@
     }
 
     .number {
-      display: block;
+      display: flex;
+      align-items: flex-start;
       margin: 2px 0 15px;
       max-width: 100%;
+      min-height: 64px;
       font-size: clamp(34px, 4vw, 58px);
       line-height: 1.05;
       letter-spacing: 0;
@@ -690,11 +692,15 @@
       min-height: 256px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
     }
 
     #results .metric-card h3 {
       margin-top: 0;
+    }
+
+    #results .metric-card > div {
+      margin-top: 2px;
     }
 
     #results .result-summary {
@@ -1455,28 +1461,28 @@
               <span class="number count-up" data-count="150" data-suffix="+套">0+套</span>
               <div>
                 <h3>品牌宣传物料</h3>
-                <p>覆盖招生海报、长图、公众号配图、节日活动物料等，保障全年营销节点视觉供应。</p>
+                <p>涵盖招生海报、长图、公众号及节日活动物料等，满足全年营销节点的视觉需求</p>
               </div>
             </article>
             <article class="spotlight bento-card metric-card reveal">
               <span class="number count-up" data-count="20" data-suffix="+场">0+场</span>
               <div>
                 <h3>活动摄影支持</h3>
-                <p>典礼、节日、周年庆、宣传片与课程产品拍摄，内部响应更快，降低外包成本。</p>
+                <p>节日活动、会议记录、外出比赛、开业庆典、动员大会、课程精彩瞬间以及校区宣传片</p>
               </div>
             </article>
             <article class="spotlight bento-card metric-card reveal">
               <span class="number count-up" data-count="1000" data-suffix="+张">0+张</span>
               <div>
                 <h3>精修样片</h3>
-                <p>直接用于招生简章与社交媒体，增强品牌真实感和信任度。</p>
+                <p>赋能招生简章与社媒传播。输出高质量的影像，也一定程度提升客户视觉体验感。</p>
               </div>
             </article>
             <article class="spotlight bento-card metric-card reveal">
               <span class="number count-up" data-count="9" data-suffix="场">0场</span>
               <div>
-                <h3>大型空间布置</h3>
-                <p>提升线下校区品牌形象与家长到访体验，让视觉资产在线上线下保持一致。</p>
+                <h3>室内外软装设计</h3>
+                <p>升级校区软装。用视觉设计表达教育理念，教学环境的呈现。</p>
               </div>
             </article>
           </div>
