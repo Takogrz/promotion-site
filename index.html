@@ -2108,6 +2108,25 @@
       });
     }
 
+    function mergeSingleLineWorkRows() {
+      ["#work-activity", "#work-space"].forEach((sectionId) => {
+        const section = document.querySelector(sectionId);
+        if (!section) return;
+
+        const rows = Array.from(section.querySelectorAll(".work-row"));
+        if (rows.length <= 1) return;
+
+        const primaryTrack = rows[0].querySelector(".work-track");
+        if (!primaryTrack) return;
+
+        rows.slice(1).forEach((row) => {
+          const cards = row.querySelectorAll(".work-track > .work-card:not([aria-hidden='true'])");
+          cards.forEach((card) => primaryTrack.appendChild(card));
+          row.remove();
+        });
+      });
+    }
+
     function bindMarqueeResize() {
       let resizeTimer;
       window.addEventListener("resize", () => {
@@ -2122,6 +2141,7 @@
     bindSpotlights();
     revealOnScroll();
     animateCounters();
+    mergeSingleLineWorkRows();
     setupWorkMarquees();
     bindMarqueeResize();
   </script>
