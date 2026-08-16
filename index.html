@@ -2357,6 +2357,23 @@
         window.clearTimeout(resizeTimer);
         resizeTimer = window.setTimeout(setupWorkMarquees, 180);
       }, { passive: true });
+      window.addEventListener("load", setupWorkMarquees, { once: true });
+    }
+
+    function recalibrateWorkMarqueesOnView() {
+      const sections = document.querySelectorAll(".work-section");
+      if (!sections.length) return;
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setupWorkMarquees();
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      sections.forEach((section) => observer.observe(section));
     }
 
     hero.addEventListener("pointermove", updatePointer, { passive: true });
@@ -2369,6 +2386,7 @@
     setupWorkMarquees();
     initWorkLightbox();
     bindMarqueeResize();
+    recalibrateWorkMarqueesOnView();
   </script>
 </body>
 </html>
