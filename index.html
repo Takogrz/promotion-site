@@ -2175,6 +2175,7 @@
 
     function setupWorkMarquees() {
       const pixelsPerSecond = 88;
+      const preloadBudget = 10;
 
       document.querySelectorAll(".work-track").forEach((track) => {
         const marquee = track.closest(".work-marquee");
@@ -2184,6 +2185,13 @@
 
         const originals = Array.from(track.children);
         if (!originals.length) return;
+
+        originals.slice(0, preloadBudget).forEach((card) => {
+          card.querySelectorAll("img").forEach((image) => {
+            image.loading = "eager";
+            image.fetchPriority = "high";
+          });
+        });
 
         const styles = getComputedStyle(track);
         const gap = parseFloat(styles.columnGap || styles.gap) || 0;
