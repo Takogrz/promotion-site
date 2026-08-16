@@ -2199,8 +2199,7 @@
           cloneSetCount += 1;
         };
 
-        // Measure the exact distance to the next copy so the last card
-        // transitions directly into the first card without a blank gap.
+        // Measure the exact distance to the next copy so the loop has no blank gap.
         appendCloneSet();
         const trackLeft = track.getBoundingClientRect().left;
         const firstClone = track.children[originals.length];
