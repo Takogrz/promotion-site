@@ -2186,11 +2186,9 @@
 
         const styles = getComputedStyle(track);
         const gap = parseFloat(styles.columnGap || styles.gap) || 0;
-        const baseDistance = track.scrollWidth + gap;
-        const neededWidth = baseDistance + marquee.clientWidth + gap;
         let cloneSetCount = 0;
 
-        while (track.scrollWidth < neededWidth && cloneSetCount < 8) {
+        const appendCloneSet = () => {
           originals.forEach((item) => {
             const clone = item.cloneNode(true);
             clone.setAttribute("aria-hidden", "true");
@@ -2198,6 +2196,18 @@
             track.appendChild(clone);
           });
           cloneSetCount += 1;
+        };
+
+        // Measure the exact distance to the next copy so the last card
+        // transitions directly into the first card without a blank gap.
+        appendCloneSet();
+        const trackLeft = track.getBoundingClientRect().left;
+        const firstClone = track.children[originals.length];
+        const baseDistance = firstClone.getBoundingClientRect().left - trackLeft;
+        const neededWidth = baseDistance + marquee.clientWidth + gap;
+
+        while (track.scrollWidth < neededWidth && cloneSetCount < 8) {
+          appendCloneSet();
         }
 
         const duration = Math.max(baseDistance / pixelsPerSecond, 18);
