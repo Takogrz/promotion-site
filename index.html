@@ -278,15 +278,15 @@
 
     .hero-title {
       width: fit-content;
-      background: linear-gradient(90deg, #f8f8fb 0%, #f8f8fb 32%, #e9d5ff 43%, #a855f7 50%, #7c3aed 56%, #f8f8fb 68%, #f8f8fb 100%);
-      background-size: 220% 100%;
-      background-position: -120% 0;
+      background: linear-gradient(90deg, #f8f8fb 0%, #f8f8fb 38%, #e9d5ff 46%, #a855f7 50%, #7c3aed 54%, #f8f8fb 64%, #f8f8fb 100%);
+      background-size: 240% 100%;
+      background-position: 100% 0;
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
       filter:
-        drop-shadow(0 0 7px rgba(168, 85, 247, 0.22))
-        drop-shadow(0 0 18px rgba(124, 58, 237, 0.12));
+        drop-shadow(0 0 4px rgba(168, 85, 247, 0.16))
+        drop-shadow(0 0 12px rgba(124, 58, 237, 0.08));
       will-change: filter, background-position;
       animation:
         titleSweep 4.2s ease-in-out infinite,
@@ -294,21 +294,21 @@
     }
 
     @keyframes titleSweep {
-      0% { background-position: -120% 0; }
-      58% { background-position: 120% 0; }
-      100% { background-position: 120% 0; }
+      0% { background-position: 100% 0; }
+      58% { background-position: 0% 0; }
+      100% { background-position: 0% 0; }
     }
 
     @keyframes titleBreath {
       0%, 100% {
         filter:
-          drop-shadow(0 0 7px rgba(168, 85, 247, 0.22))
-          drop-shadow(0 0 18px rgba(124, 58, 237, 0.12));
+          drop-shadow(0 0 4px rgba(168, 85, 247, 0.16))
+          drop-shadow(0 0 12px rgba(124, 58, 237, 0.08));
       }
       50% {
         filter:
-          drop-shadow(0 0 10px rgba(216, 180, 254, 0.36))
-          drop-shadow(0 0 30px rgba(168, 85, 247, 0.2));
+          drop-shadow(0 0 7px rgba(216, 180, 254, 0.28))
+          drop-shadow(0 0 20px rgba(168, 85, 247, 0.14));
       }
     }
 
@@ -2423,8 +2423,7 @@
       sections.forEach((section) => observer.observe(section));
     }
 
-    hero.addEventListener("pointermove", updatePointer, { passive: true });
-    hero.addEventListener("pointerleave", resetPointer, { passive: true });
+    resetPointer();
 
     bindSpotlights();
     revealOnScroll();
