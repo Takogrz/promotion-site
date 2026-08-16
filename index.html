@@ -849,10 +849,6 @@
       will-change: transform;
     }
 
-    .work-marquee:hover .work-track {
-      animation-play-state: paused;
-    }
-
     @keyframes worksScroll {
       from { transform: translateX(0); }
       to { transform: translateX(var(--scroll-distance)); }
@@ -1201,6 +1197,10 @@
         animation: none !important;
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
+      }
+
+      .work-track {
+        animation: worksScroll var(--scroll-duration) linear infinite !important;
       }
     }
 
@@ -2069,6 +2069,7 @@
   <script>
     const hero = document.querySelector(".hero");
     const heroGrid = document.querySelector(".hero-grid");
+    const marqueeRafMap = new WeakMap();
 
     function updatePointer(event) {
       const rect = hero.getBoundingClientRect();
@@ -2212,6 +2213,8 @@
         const trackLeft = track.getBoundingClientRect().left;
         const firstClone = track.children[originals.length];
         const baseDistance = firstClone.getBoundingClientRect().left - trackLeft;
+        if (!Number.isFinite(baseDistance) || baseDistance <= 0) return;
+
         const neededWidth = baseDistance + marquee.clientWidth + gap;
 
         while (track.scrollWidth < neededWidth && cloneSetCount < 8) {
@@ -2221,6 +2224,25 @@
         const duration = Math.max(baseDistance / pixelsPerSecond, 18);
         track.style.setProperty("--scroll-distance", `-${baseDistance}px`);
         track.style.setProperty("--scroll-duration", `${duration.toFixed(2)}s`);
+
+        const existingFrame = marqueeRafMap.get(track);
+        if (existingFrame) {
+          cancelAnimationFrame(existingFrame);
+        }
+
+        track.style.animation = "none";
+        track.style.transform = "translate3d(0, 0, 0)";
+
+        const durationMs = duration * 1000;
+        const start = performance.now();
+        const tick = (now) => {
+          const elapsed = (now - start) % durationMs;
+          const progress = elapsed / durationMs;
+          track.style.transform = `translate3d(${-baseDistance * progress}px, 0, 0)`;
+          marqueeRafMap.set(track, requestAnimationFrame(tick));
+        };
+
+        marqueeRafMap.set(track, requestAnimationFrame(tick));
       });
     }
 
