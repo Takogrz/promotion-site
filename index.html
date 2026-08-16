@@ -78,7 +78,7 @@
       --grid-size: 12px;
       --cursor-x: 18%;
       --cursor-y: 22%;
-      --cursor-glow: 145px;
+      --cursor-glow: 165px;
     }
 
     .hero-grid::before,
@@ -115,11 +115,27 @@
       filter:
         drop-shadow(0 0 6px rgba(196, 112, 255, 1))
         drop-shadow(0 0 14px rgba(124, 58, 237, 0.86));
+      animation: heroGridBreath 4.8s ease-in-out infinite;
       mask-image:
         radial-gradient(circle var(--cursor-glow) at var(--cursor-x) var(--cursor-y), black 0%, black 58%, rgba(0,0,0,0.46) 76%, transparent 100%);
       -webkit-mask-image:
         radial-gradient(circle var(--cursor-glow) at var(--cursor-x) var(--cursor-y), black 0%, black 58%, rgba(0,0,0,0.46) 76%, transparent 100%);
       transform: translate3d(var(--shift-x, 0px), var(--shift-y, 0px), 0);
+    }
+
+    @keyframes heroGridBreath {
+      0%, 100% {
+        opacity: 0.74;
+        filter:
+          drop-shadow(0 0 5px rgba(196, 112, 255, 0.78))
+          drop-shadow(0 0 13px rgba(124, 58, 237, 0.58));
+      }
+      50% {
+        opacity: 1;
+        filter:
+          drop-shadow(0 0 8px rgba(216, 180, 254, 1))
+          drop-shadow(0 0 22px rgba(168, 85, 247, 0.9));
+      }
     }
 
     .grid-band {
@@ -413,12 +429,49 @@
     }
 
     .snapshot-card {
+      position: relative;
+      overflow: hidden;
       min-height: 104px;
       padding: 16px 16px 15px;
-      border: 1px solid rgba(255, 255, 255, 0.10);
+      border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 14px;
-      background: rgba(10, 10, 14, 0.48);
+      background:
+        radial-gradient(circle at var(--card-x, 50%) var(--card-y, 50%), rgba(168, 85, 247, 0.16), transparent 34%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.035)),
+        rgba(10, 10, 14, 0.52);
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.08),
+        0 16px 44px rgba(0, 0, 0, 0.22);
       backdrop-filter: blur(14px);
+      transition:
+        border-color 180ms ease,
+        background 180ms ease,
+        box-shadow 180ms ease,
+        transform 180ms ease;
+    }
+
+    .snapshot-card::before {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      border-radius: inherit;
+      padding: 1px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.24), rgba(168, 85, 247, 0.52), rgba(94, 234, 212, 0.18));
+      opacity: 0.28;
+      pointer-events: none;
+      -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+
+    .snapshot-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(168, 85, 247, 0.44);
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.12),
+        0 20px 58px rgba(80, 38, 132, 0.24);
     }
 
     .snapshot-card strong {
@@ -1226,6 +1279,10 @@
         animation:
           titleSweep 4.2s ease-in-out infinite,
           titleBreath 4.8s ease-in-out infinite !important;
+      }
+
+      .hero-grid::after {
+        animation: heroGridBreath 4.8s ease-in-out infinite !important;
       }
     }
 
@@ -2118,7 +2175,7 @@
     }
 
     function bindSpotlights() {
-      document.querySelectorAll(".spotlight, .button").forEach((element) => {
+      document.querySelectorAll(".spotlight, .button, .snapshot-card").forEach((element) => {
         element.addEventListener("pointermove", (event) => {
           const rect = element.getBoundingClientRect();
           const x = ((event.clientX - rect.left) / rect.width) * 100;
@@ -2423,6 +2480,8 @@
       sections.forEach((section) => observer.observe(section));
     }
 
+    hero.addEventListener("pointermove", updatePointer, { passive: true });
+    hero.addEventListener("pointerleave", resetPointer, { passive: true });
     resetPointer();
 
     bindSpotlights();
