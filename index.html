@@ -2189,6 +2189,60 @@
       });
     }
 
+    async function renderReplacementWorkGalleries() {
+      try {
+        const response = await fetch("assets/works/replacement/manifest.json", { cache: "no-store" });
+        if (!response.ok) return false;
+
+        const items = await response.json();
+        const tracks = {
+          photo: document.querySelector("#work-photo .work-track"),
+          poster: document.querySelector("#work-poster .work-track"),
+          activity: document.querySelector("#work-activity .work-track"),
+          space: document.querySelector("#work-space .work-track")
+        };
+
+        Object.entries(tracks).forEach(([category, track]) => {
+          if (!track) return;
+
+          track.replaceChildren();
+          items
+            .filter((item) => item.category === category)
+            .forEach((item) => {
+              const card = document.createElement("article");
+              card.className = `work-card ${item.orientation}`;
+
+              const media = document.createElement("div");
+              media.className = "work-card-media";
+
+              const image = document.createElement("img");
+              image.src = item.file;
+              image.alt = item.title;
+              image.loading = "lazy";
+              media.appendChild(image);
+
+              const body = document.createElement("div");
+              body.className = "work-card-body";
+
+              const title = document.createElement("strong");
+              title.textContent = item.title;
+
+              const orientation = document.createElement("span");
+              orientation.textContent = item.orientation === "portrait" ? "竖版作品" : "横版作品";
+
+              body.append(title, orientation);
+              card.append(media, body);
+              track.appendChild(card);
+            });
+        });
+
+        return true;
+      } catch (error) {
+        console.warn("Replacement work galleries unavailable; keeping the fallback galleries.", error);
+        return false;
+      }
+    }
+
     function mergeSingleLineWorkRows() {
       ["#work-activity", "#work-space"].forEach((sectionId) => {
         const section = document.querySelector(sectionId);
@@ -2276,6 +2330,9 @@
     animateCounters();
     mergeSingleLineWorkRows();
     setupWorkMarquees();
+    renderReplacementWorkGalleries().then((loaded) => {
+      if (loaded) setupWorkMarquees();
+    });
     initWorkLightbox();
     bindMarqueeResize();
   </script>
