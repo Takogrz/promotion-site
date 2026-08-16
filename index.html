@@ -2208,7 +2208,7 @@
           track.replaceChildren();
           items
             .filter((item) => item.category === category)
-            .forEach((item) => {
+            .forEach((item, index) => {
               const card = document.createElement("article");
               card.className = `work-card ${item.orientation}`;
 
@@ -2218,7 +2218,9 @@
               const image = document.createElement("img");
               image.src = item.file;
               image.alt = item.title;
-              image.loading = "lazy";
+              image.loading = index < 4 ? "eager" : "lazy";
+              image.decoding = "async";
+              if (index < 4) image.fetchPriority = "high";
               media.appendChild(image);
 
               const body = document.createElement("div");

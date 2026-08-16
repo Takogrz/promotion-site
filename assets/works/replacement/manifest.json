@@ -1,570 +1,641 @@
 [
-    {
-        "category":  "photo",
-        "file":  "assets/works/replacement/photo-01.jpg",
-        "title":  "2025教师节活动拍摄",
-        "orientation":  "landscape",
-        "width":  5040,
-        "height":  3360
-    },
-    {
-        "category":  "photo",
-        "file":  "assets/works/replacement/photo-02.jpg",
-        "title":  "2025米娜查理结课汇演拍摄",
-        "orientation":  "landscape",
-        "width":  6720,
-        "height":  4480
-    },
-    {
-        "category":  "photo",
-        "file":  "assets/works/replacement/photo-03.jpg",
-        "title":  "2025年货节拍摄",
-        "orientation":  "landscape",
-        "width":  6720,
-        "height":  4480
-    },
-    {
-        "category":  "photo",
-        "file":  "assets/works/replacement/photo-04.jpg",
-        "title":  "2025年中述职会议拍摄",
-        "orientation":  "landscape",
-        "width":  4464,
-        "height":  2976
-    },
-    {
-        "category":  "photo",
-        "file":  "assets/works/replacement/photo-05.jpg",
-        "title":  "2025狮子会慈善晚宴拍摄",
-        "orientation":  "landscape",
-        "width":  7008,
-        "height":  4672
-    },
-    {
-        "category":  "photo",
-        "file":  "assets/works/replacement/photo-06.jpg",
-        "title":  "2025双十二动员大会拍摄",
-        "orientation":  "landscape",
-        "width":  4096,
-        "height":  2730
-    },
-    {
-        "category":  "photo",
-        "file":  "assets/works/replacement/photo-07.jpg",
-        "title":  "2025棠树小学一年级英语表演拍摄",
-        "orientation":  "landscape",
-        "width":  4464,
-        "height":  2976
-    },
-    {
-        "category":  "photo",
-        "file":  "assets/works/replacement/photo-08.jpg",
-        "title":  "2025艺童萌虹桥华舞杯表演拍摄",
-        "orientation":  "landscape",
-        "width":  6720,
-        "height":  4480
-    },
-    {
-        "category":  "photo",
-        "file":  "assets/works/replacement/photo-09.jpg",
-        "title":  "2025艺童萌考级拍摄",
-        "orientation":  "landscape",
-        "width":  5040,
-        "height":  3360
-    },
-    {
-        "category":  "photo",
-        "file":  "assets/works/replacement/photo-10.jpg",
-        "title":  "2026米娜查理结课汇演",
-        "orientation":  "landscape",
-        "width":  6720,
-        "height":  4480
-    },
-    {
-        "category":  "photo",
-        "file":  "assets/works/replacement/photo-11.jpg",
-        "title":  "第5季为公益发声拍摄",
-        "orientation":  "landscape",
-        "width":  5040,
-        "height":  3360
-    },
-    {
-        "category":  "photo",
-        "file":  "assets/works/replacement/photo-12.jpg",
-        "title":  "锦东杯赛颁奖活动拍摄",
-        "orientation":  "landscape",
-        "width":  5040,
-        "height":  3360
-    },
-    {
-        "category":  "photo",
-        "file":  "assets/works/replacement/photo-13.png",
-        "title":  "锦东校区宣传片拍摄",
-        "orientation":  "landscape",
-        "width":  1142,
-        "height":  643
-    },
-    {
-        "category":  "photo",
-        "file":  "assets/works/replacement/photo-14.jpg",
-        "title":  "秋季班班课程拍摄",
-        "orientation":  "landscape",
-        "width":  6720,
-        "height":  4480
-    },
-    {
-        "category":  "photo",
-        "file":  "assets/works/replacement/photo-15.jpg",
-        "title":  "暑假班课程拍摄",
-        "orientation":  "landscape",
-        "width":  6048,
-        "height":  4032
-    },
-    {
-        "category":  "photo",
-        "file":  "assets/works/replacement/photo-16.jpg",
-        "title":  "新一年级家长见面会暨暑期研学家长会拍摄",
-        "orientation":  "landscape",
-        "width":  3240,
-        "height":  2160
-    },
-    {
-        "category":  "photo",
-        "file":  "assets/works/replacement/photo-17.jpg",
-        "title":  "雅美佳\u0026米娜查理联合教研",
-        "orientation":  "landscape",
-        "width":  5712,
-        "height":  4284
-    },
-    {
-        "category":  "photo",
-        "file":  "assets/works/replacement/photo-18.jpg",
-        "title":  "艺童萌新校区开业拍摄",
-        "orientation":  "landscape",
-        "width":  6720,
-        "height":  4480
-    },
-    {
-        "category":  "photo",
-        "file":  "assets/works/replacement/photo-19.jpg",
-        "title":  "职业君人培训拍摄",
-        "orientation":  "landscape",
-        "width":  6704,
-        "height":  4469
-    },
-    {
-        "category":  "poster",
-        "file":  "assets/works/replacement/poster-01.png",
-        "title":  "520节日海报",
-        "orientation":  "portrait",
-        "width":  692,
-        "height":  982
-    },
-    {
-        "category":  "poster",
-        "file":  "assets/works/replacement/poster-02.jpg",
-        "title":  "KET喜报",
-        "orientation":  "portrait",
-        "width":  2409,
-        "height":  3685
-    },
-    {
-        "category":  "poster",
-        "file":  "assets/works/replacement/poster-03.jpg",
-        "title":  "KET学员喜报",
-        "orientation":  "portrait",
-        "width":  2480,
-        "height":  3508
-    },
-    {
-        "category":  "poster",
-        "file":  "assets/works/replacement/poster-04.jpg",
-        "title":  "杯赛名师教练团",
-        "orientation":  "portrait",
-        "width":  1242,
-        "height":  1897
-    },
-    {
-        "category":  "poster",
-        "file":  "assets/works/replacement/poster-05.jpg",
-        "title":  "编程竞赛班海报",
-        "orientation":  "portrait",
-        "width":  1242,
-        "height":  2208
-    },
-    {
-        "category":  "poster",
-        "file":  "assets/works/replacement/poster-06.jpg",
-        "title":  "春节放假通知",
-        "orientation":  "portrait",
-        "width":  2480,
-        "height":  3508
-    },
-    {
-        "category":  "poster",
-        "file":  "assets/works/replacement/poster-07.jpg",
-        "title":  "大年初三海报",
-        "orientation":  "portrait",
-        "width":  1242,
-        "height":  2208
-    },
-    {
-        "category":  "poster",
-        "file":  "assets/works/replacement/poster-08.jpg",
-        "title":  "儿童节海报",
-        "orientation":  "portrait",
-        "width":  6480,
-        "height":  11520
-    },
-    {
-        "category":  "poster",
-        "file":  "assets/works/replacement/poster-09.jpg",
-        "title":  "广花Ai晚辅传单",
-        "orientation":  "portrait",
-        "width":  2480,
-        "height":  3508
-    },
-    {
-        "category":  "poster",
-        "file":  "assets/works/replacement/poster-10.jpg",
-        "title":  "寒假日历海报",
-        "orientation":  "portrait",
-        "width":  1242,
-        "height":  2093
-    },
-    {
-        "category":  "poster",
-        "file":  "assets/works/replacement/poster-11.png",
-        "title":  "红棉杯喜报",
-        "orientation":  "portrait",
-        "width":  735,
-        "height":  981
-    },
-    {
-        "category":  "poster",
-        "file":  "assets/works/replacement/poster-12.jpg",
-        "title":  "兼职助教社招海报",
-        "orientation":  "portrait",
-        "width":  1927,
-        "height":  3508
-    },
-    {
-        "category":  "poster",
-        "file":  "assets/works/replacement/poster-13.jpg",
-        "title":  "建军节海报",
-        "orientation":  "portrait",
-        "width":  1242,
-        "height":  2188
-    },
-    {
-        "category":  "poster",
-        "file":  "assets/works/replacement/poster-14.jpg",
-        "title":  "剑桥喜报",
-        "orientation":  "portrait",
-        "width":  3544,
-        "height":  6052
-    },
-    {
-        "category":  "poster",
-        "file":  "assets/works/replacement/poster-15.jpg",
-        "title":  "龙门节概念海报",
-        "orientation":  "portrait",
-        "width":  4961,
-        "height":  7890
-    },
-    {
-        "category":  "poster",
-        "file":  "assets/works/replacement/poster-16.jpg",
-        "title":  "米娜口才名师团",
-        "orientation":  "portrait",
-        "width":  2480,
-        "height":  3507
-    },
-    {
-        "category":  "poster",
-        "file":  "assets/works/replacement/poster-17.jpg",
-        "title":  "母亲节海报",
-        "orientation":  "portrait",
-        "width":  5176,
-        "height":  9200
-    },
-    {
-        "category":  "poster",
-        "file":  "assets/works/replacement/poster-18.jpg",
-        "title":  "清明节海报",
-        "orientation":  "portrait",
-        "width":  1242,
-        "height":  2352
-    },
-    {
-        "category":  "poster",
-        "file":  "assets/works/replacement/poster-19.jpg",
-        "title":  "暑假艺术班课海报",
-        "orientation":  "portrait",
-        "width":  1242,
-        "height":  1690
-    },
-    {
-        "category":  "poster",
-        "file":  "assets/works/replacement/poster-20.jpg",
-        "title":  "双十二报名礼品海报",
-        "orientation":  "portrait",
-        "width":  2480,
-        "height":  3508
-    },
-    {
-        "category":  "poster",
-        "file":  "assets/works/replacement/poster-21.jpg",
-        "title":  "元宵节海报",
-        "orientation":  "portrait",
-        "width":  5031,
-        "height":  6803
-    },
-    {
-        "category":  "activity",
-        "file":  "assets/works/replacement/activity-01.png",
-        "title":  "报名有礼表",
-        "orientation":  "portrait",
-        "width":  692,
-        "height":  980
-    },
-    {
-        "category":  "activity",
-        "file":  "assets/works/replacement/activity-02.png",
-        "title":  "父亲节贴纸",
-        "orientation":  "landscape",
-        "width":  710,
-        "height":  638
-    },
-    {
-        "category":  "activity",
-        "file":  "assets/works/replacement/activity-03.png",
-        "title":  "横幅",
-        "orientation":  "landscape",
-        "width":  1673,
-        "height":  945
-    },
-    {
-        "category":  "activity",
-        "file":  "assets/works/replacement/activity-04.jpg",
-        "title":  "金秋团购主视觉",
-        "orientation":  "landscape",
-        "width":  3125,
-        "height":  1758
-    },
-    {
-        "category":  "activity",
-        "file":  "assets/works/replacement/activity-05.png",
-        "title":  "龙门节详情kt板",
-        "orientation":  "portrait",
-        "width":  733,
-        "height":  978
-    },
-    {
-        "category":  "activity",
-        "file":  "assets/works/replacement/activity-06.jpg",
-        "title":  "龙门节主视觉",
-        "orientation":  "landscape",
-        "width":  1920,
-        "height":  1080
-    },
-    {
-        "category":  "activity",
-        "file":  "assets/works/replacement/activity-07.png",
-        "title":  "年货节kt板",
-        "orientation":  "portrait",
-        "width":  734,
-        "height":  980
-    },
-    {
-        "category":  "activity",
-        "file":  "assets/works/replacement/activity-08.png",
-        "title":  "年货节签到墙",
-        "orientation":  "landscape",
-        "width":  1886,
-        "height":  983
-    },
-    {
-        "category":  "activity",
-        "file":  "assets/works/replacement/activity-09.png",
-        "title":  "年货节手持kt板",
-        "orientation":  "landscape",
-        "width":  7087,
-        "height":  6383
-    },
-    {
-        "category":  "activity",
-        "file":  "assets/works/replacement/activity-10.png",
-        "title":  "女神节手举牌",
-        "orientation":  "landscape",
-        "width":  7087,
-        "height":  4418
-    },
-    {
-        "category":  "activity",
-        "file":  "assets/works/replacement/activity-11.png",
-        "title":  "融创挂画创意海报",
-        "orientation":  "portrait",
-        "width":  1417,
-        "height":  1984
-    },
-    {
-        "category":  "activity",
-        "file":  "assets/works/replacement/activity-12.png",
-        "title":  "融创开业签到墙",
-        "orientation":  "landscape",
-        "width":  984,
-        "height":  640
-    },
-    {
-        "category":  "activity",
-        "file":  "assets/works/replacement/activity-13.png",
-        "title":  "融创开业游戏kt板",
-        "orientation":  "portrait",
-        "width":  733,
-        "height":  978
-    },
-    {
-        "category":  "activity",
-        "file":  "assets/works/replacement/activity-14.png",
-        "title":  "双十二图书换卷公益框架",
-        "orientation":  "portrait",
-        "width":  1080,
-        "height":  1920
-    },
-    {
-        "category":  "activity",
-        "file":  "assets/works/replacement/activity-15.jpg",
-        "title":  "双十二主视觉",
-        "orientation":  "landscape",
-        "width":  3508,
-        "height":  1906
-    },
-    {
-        "category":  "activity",
-        "file":  "assets/works/replacement/activity-16.png",
-        "title":  "为公益发声kt板",
-        "orientation":  "landscape",
-        "width":  1388,
-        "height":  979
-    },
-    {
-        "category":  "activity",
-        "file":  "assets/works/replacement/activity-17.png",
-        "title":  "雅美佳新年红包",
-        "orientation":  "portrait",
-        "width":  9632,
-        "height":  10867
-    },
-    {
-        "category":  "activity",
-        "file":  "assets/works/replacement/activity-18.jpg",
-        "title":  "中高层述职签到处",
-        "orientation":  "portrait",
-        "width":  7087,
-        "height":  9449
-    },
-    {
-        "category":  "activity",
-        "file":  "assets/works/replacement/activity-19.jpg",
-        "title":  "周年庆海报",
-        "orientation":  "portrait",
-        "width":  1242,
-        "height":  2141
-    },
-    {
-        "category":  "space",
-        "file":  "assets/works/replacement/space-01.png",
-        "title":  "广花地贴海报",
-        "orientation":  "landscape",
-        "width":  1790,
-        "height":  972
-    },
-    {
-        "category":  "space",
-        "file":  "assets/works/replacement/space-02.png",
-        "title":  "广花广告牌",
-        "orientation":  "landscape",
-        "width":  1425,
-        "height":  977
-    },
-    {
-        "category":  "space",
-        "file":  "assets/works/replacement/space-03.png",
-        "title":  "国际校区环创设计",
-        "orientation":  "landscape",
-        "width":  1809,
-        "height":  769
-    },
-    {
-        "category":  "space",
-        "file":  "assets/works/replacement/space-04.jpg",
-        "title":  "佳里书屋灯箱",
-        "orientation":  "landscape",
-        "width":  4032,
-        "height":  3024
-    },
-    {
-        "category":  "space",
-        "file":  "assets/works/replacement/space-05.jpg",
-        "title":  "佳里书屋曲面装饰墙",
-        "orientation":  "landscape",
-        "width":  4032,
-        "height":  3024
-    },
-    {
-        "category":  "space",
-        "file":  "assets/works/replacement/space-06.png",
-        "title":  "融创米娜灯箱",
-        "orientation":  "landscape",
-        "width":  1085,
-        "height":  692
-    },
-    {
-        "category":  "space",
-        "file":  "assets/works/replacement/space-07.png",
-        "title":  "融创校区开业灯箱",
-        "orientation":  "landscape",
-        "width":  1310,
-        "height":  797
-    },
-    {
-        "category":  "space",
-        "file":  "assets/works/replacement/space-08.png",
-        "title":  "融创校区理念墙",
-        "orientation":  "landscape",
-        "width":  847,
-        "height":  542
-    },
-    {
-        "category":  "space",
-        "file":  "assets/works/replacement/space-09.png",
-        "title":  "融创校区企业发展墙",
-        "orientation":  "landscape",
-        "width":  976,
-        "height":  614
-    },
-    {
-        "category":  "space",
-        "file":  "assets/works/replacement/space-10.png",
-        "title":  "融创校区暑期灯箱",
-        "orientation":  "landscape",
-        "width":  785,
-        "height":  525
-    },
-    {
-        "category":  "space",
-        "file":  "assets/works/replacement/space-11.png",
-        "title":  "艺童萌软装发光logo",
-        "orientation":  "portrait",
-        "width":  841,
-        "height":  979
-    },
-    {
-        "category":  "space",
-        "file":  "assets/works/replacement/space-12.png",
-        "title":  "园玄校区3E理念墙",
-        "orientation":  "landscape",
-        "width":  1001,
-        "height":  637
-    }
+  {
+    "category": "photo",
+    "file": "assets/works/replacement/photo-01.webp",
+    "title": "2025教师节活动拍摄",
+    "orientation": "landscape",
+    "width": 5040,
+    "height": 3360,
+    "format": "webp"
+  },
+  {
+    "category": "photo",
+    "file": "assets/works/replacement/photo-02.webp",
+    "title": "2025米娜查理结课汇演拍摄",
+    "orientation": "landscape",
+    "width": 6720,
+    "height": 4480,
+    "format": "webp"
+  },
+  {
+    "category": "photo",
+    "file": "assets/works/replacement/photo-03.webp",
+    "title": "2025年货节拍摄",
+    "orientation": "landscape",
+    "width": 6720,
+    "height": 4480,
+    "format": "webp"
+  },
+  {
+    "category": "photo",
+    "file": "assets/works/replacement/photo-04.webp",
+    "title": "2025年中述职会议拍摄",
+    "orientation": "landscape",
+    "width": 4464,
+    "height": 2976,
+    "format": "webp"
+  },
+  {
+    "category": "photo",
+    "file": "assets/works/replacement/photo-05.webp",
+    "title": "2025狮子会慈善晚宴拍摄",
+    "orientation": "landscape",
+    "width": 7008,
+    "height": 4672,
+    "format": "webp"
+  },
+  {
+    "category": "photo",
+    "file": "assets/works/replacement/photo-06.webp",
+    "title": "2025双十二动员大会拍摄",
+    "orientation": "landscape",
+    "width": 4096,
+    "height": 2730,
+    "format": "webp"
+  },
+  {
+    "category": "photo",
+    "file": "assets/works/replacement/photo-07.webp",
+    "title": "2025棠树小学一年级英语表演拍摄",
+    "orientation": "landscape",
+    "width": 4464,
+    "height": 2976,
+    "format": "webp"
+  },
+  {
+    "category": "photo",
+    "file": "assets/works/replacement/photo-08.webp",
+    "title": "2025艺童萌虹桥华舞杯表演拍摄",
+    "orientation": "landscape",
+    "width": 6720,
+    "height": 4480,
+    "format": "webp"
+  },
+  {
+    "category": "photo",
+    "file": "assets/works/replacement/photo-09.webp",
+    "title": "2025艺童萌考级拍摄",
+    "orientation": "landscape",
+    "width": 5040,
+    "height": 3360,
+    "format": "webp"
+  },
+  {
+    "category": "photo",
+    "file": "assets/works/replacement/photo-10.webp",
+    "title": "2026米娜查理结课汇演",
+    "orientation": "landscape",
+    "width": 6720,
+    "height": 4480,
+    "format": "webp"
+  },
+  {
+    "category": "photo",
+    "file": "assets/works/replacement/photo-11.webp",
+    "title": "第5季为公益发声拍摄",
+    "orientation": "landscape",
+    "width": 5040,
+    "height": 3360,
+    "format": "webp"
+  },
+  {
+    "category": "photo",
+    "file": "assets/works/replacement/photo-12.webp",
+    "title": "锦东杯赛颁奖活动拍摄",
+    "orientation": "landscape",
+    "width": 5040,
+    "height": 3360,
+    "format": "webp"
+  },
+  {
+    "category": "photo",
+    "file": "assets/works/replacement/photo-13.webp",
+    "title": "锦东校区宣传片拍摄",
+    "orientation": "landscape",
+    "width": 1142,
+    "height": 643,
+    "format": "webp"
+  },
+  {
+    "category": "photo",
+    "file": "assets/works/replacement/photo-14.webp",
+    "title": "秋季班班课程拍摄",
+    "orientation": "landscape",
+    "width": 6720,
+    "height": 4480,
+    "format": "webp"
+  },
+  {
+    "category": "photo",
+    "file": "assets/works/replacement/photo-15.webp",
+    "title": "暑假班课程拍摄",
+    "orientation": "landscape",
+    "width": 6048,
+    "height": 4032,
+    "format": "webp"
+  },
+  {
+    "category": "photo",
+    "file": "assets/works/replacement/photo-16.webp",
+    "title": "新一年级家长见面会暨暑期研学家长会拍摄",
+    "orientation": "landscape",
+    "width": 3240,
+    "height": 2160,
+    "format": "webp"
+  },
+  {
+    "category": "photo",
+    "file": "assets/works/replacement/photo-17.webp",
+    "title": "雅美佳&米娜查理联合教研",
+    "orientation": "landscape",
+    "width": 5712,
+    "height": 4284,
+    "format": "webp"
+  },
+  {
+    "category": "photo",
+    "file": "assets/works/replacement/photo-18.webp",
+    "title": "艺童萌新校区开业拍摄",
+    "orientation": "landscape",
+    "width": 6720,
+    "height": 4480,
+    "format": "webp"
+  },
+  {
+    "category": "photo",
+    "file": "assets/works/replacement/photo-19.webp",
+    "title": "职业君人培训拍摄",
+    "orientation": "landscape",
+    "width": 6704,
+    "height": 4469,
+    "format": "webp"
+  },
+  {
+    "category": "poster",
+    "file": "assets/works/replacement/poster-01.webp",
+    "title": "520节日海报",
+    "orientation": "portrait",
+    "width": 692,
+    "height": 982,
+    "format": "webp"
+  },
+  {
+    "category": "poster",
+    "file": "assets/works/replacement/poster-02.webp",
+    "title": "KET喜报",
+    "orientation": "portrait",
+    "width": 2409,
+    "height": 3685,
+    "format": "webp"
+  },
+  {
+    "category": "poster",
+    "file": "assets/works/replacement/poster-03.webp",
+    "title": "KET学员喜报",
+    "orientation": "portrait",
+    "width": 2480,
+    "height": 3508,
+    "format": "webp"
+  },
+  {
+    "category": "poster",
+    "file": "assets/works/replacement/poster-04.webp",
+    "title": "杯赛名师教练团",
+    "orientation": "portrait",
+    "width": 1242,
+    "height": 1897,
+    "format": "webp"
+  },
+  {
+    "category": "poster",
+    "file": "assets/works/replacement/poster-05.webp",
+    "title": "编程竞赛班海报",
+    "orientation": "portrait",
+    "width": 1242,
+    "height": 2208,
+    "format": "webp"
+  },
+  {
+    "category": "poster",
+    "file": "assets/works/replacement/poster-06.webp",
+    "title": "春节放假通知",
+    "orientation": "portrait",
+    "width": 2480,
+    "height": 3508,
+    "format": "webp"
+  },
+  {
+    "category": "poster",
+    "file": "assets/works/replacement/poster-07.webp",
+    "title": "大年初三海报",
+    "orientation": "portrait",
+    "width": 1242,
+    "height": 2208,
+    "format": "webp"
+  },
+  {
+    "category": "poster",
+    "file": "assets/works/replacement/poster-08.webp",
+    "title": "儿童节海报",
+    "orientation": "portrait",
+    "width": 6480,
+    "height": 11520,
+    "format": "webp"
+  },
+  {
+    "category": "poster",
+    "file": "assets/works/replacement/poster-09.webp",
+    "title": "广花Ai晚辅传单",
+    "orientation": "portrait",
+    "width": 2480,
+    "height": 3508,
+    "format": "webp"
+  },
+  {
+    "category": "poster",
+    "file": "assets/works/replacement/poster-10.webp",
+    "title": "寒假日历海报",
+    "orientation": "portrait",
+    "width": 1242,
+    "height": 2093,
+    "format": "webp"
+  },
+  {
+    "category": "poster",
+    "file": "assets/works/replacement/poster-11.webp",
+    "title": "红棉杯喜报",
+    "orientation": "portrait",
+    "width": 735,
+    "height": 981,
+    "format": "webp"
+  },
+  {
+    "category": "poster",
+    "file": "assets/works/replacement/poster-12.webp",
+    "title": "兼职助教社招海报",
+    "orientation": "portrait",
+    "width": 1927,
+    "height": 3508,
+    "format": "webp"
+  },
+  {
+    "category": "poster",
+    "file": "assets/works/replacement/poster-13.webp",
+    "title": "建军节海报",
+    "orientation": "portrait",
+    "width": 1242,
+    "height": 2188,
+    "format": "webp"
+  },
+  {
+    "category": "poster",
+    "file": "assets/works/replacement/poster-14.webp",
+    "title": "剑桥喜报",
+    "orientation": "portrait",
+    "width": 3544,
+    "height": 6052,
+    "format": "webp"
+  },
+  {
+    "category": "poster",
+    "file": "assets/works/replacement/poster-15.webp",
+    "title": "龙门节概念海报",
+    "orientation": "portrait",
+    "width": 4961,
+    "height": 7890,
+    "format": "webp"
+  },
+  {
+    "category": "poster",
+    "file": "assets/works/replacement/poster-16.webp",
+    "title": "米娜口才名师团",
+    "orientation": "portrait",
+    "width": 2480,
+    "height": 3507,
+    "format": "webp"
+  },
+  {
+    "category": "poster",
+    "file": "assets/works/replacement/poster-17.webp",
+    "title": "母亲节海报",
+    "orientation": "portrait",
+    "width": 5176,
+    "height": 9200,
+    "format": "webp"
+  },
+  {
+    "category": "poster",
+    "file": "assets/works/replacement/poster-18.webp",
+    "title": "清明节海报",
+    "orientation": "portrait",
+    "width": 1242,
+    "height": 2352,
+    "format": "webp"
+  },
+  {
+    "category": "poster",
+    "file": "assets/works/replacement/poster-19.webp",
+    "title": "暑假艺术班课海报",
+    "orientation": "portrait",
+    "width": 1242,
+    "height": 1690,
+    "format": "webp"
+  },
+  {
+    "category": "poster",
+    "file": "assets/works/replacement/poster-20.webp",
+    "title": "双十二报名礼品海报",
+    "orientation": "portrait",
+    "width": 2480,
+    "height": 3508,
+    "format": "webp"
+  },
+  {
+    "category": "poster",
+    "file": "assets/works/replacement/poster-21.webp",
+    "title": "元宵节海报",
+    "orientation": "portrait",
+    "width": 5031,
+    "height": 6803,
+    "format": "webp"
+  },
+  {
+    "category": "activity",
+    "file": "assets/works/replacement/activity-01.webp",
+    "title": "报名有礼表",
+    "orientation": "portrait",
+    "width": 692,
+    "height": 980,
+    "format": "webp"
+  },
+  {
+    "category": "activity",
+    "file": "assets/works/replacement/activity-02.webp",
+    "title": "父亲节贴纸",
+    "orientation": "landscape",
+    "width": 710,
+    "height": 638,
+    "format": "webp"
+  },
+  {
+    "category": "activity",
+    "file": "assets/works/replacement/activity-03.webp",
+    "title": "横幅",
+    "orientation": "landscape",
+    "width": 1673,
+    "height": 945,
+    "format": "webp"
+  },
+  {
+    "category": "activity",
+    "file": "assets/works/replacement/activity-04.webp",
+    "title": "金秋团购主视觉",
+    "orientation": "landscape",
+    "width": 3125,
+    "height": 1758,
+    "format": "webp"
+  },
+  {
+    "category": "activity",
+    "file": "assets/works/replacement/activity-05.webp",
+    "title": "龙门节详情kt板",
+    "orientation": "portrait",
+    "width": 733,
+    "height": 978,
+    "format": "webp"
+  },
+  {
+    "category": "activity",
+    "file": "assets/works/replacement/activity-06.webp",
+    "title": "龙门节主视觉",
+    "orientation": "landscape",
+    "width": 1920,
+    "height": 1080,
+    "format": "webp"
+  },
+  {
+    "category": "activity",
+    "file": "assets/works/replacement/activity-07.webp",
+    "title": "年货节kt板",
+    "orientation": "portrait",
+    "width": 734,
+    "height": 980,
+    "format": "webp"
+  },
+  {
+    "category": "activity",
+    "file": "assets/works/replacement/activity-08.webp",
+    "title": "年货节签到墙",
+    "orientation": "landscape",
+    "width": 1886,
+    "height": 983,
+    "format": "webp"
+  },
+  {
+    "category": "activity",
+    "file": "assets/works/replacement/activity-09.webp",
+    "title": "年货节手持kt板",
+    "orientation": "landscape",
+    "width": 7087,
+    "height": 6383,
+    "format": "webp"
+  },
+  {
+    "category": "activity",
+    "file": "assets/works/replacement/activity-10.webp",
+    "title": "女神节手举牌",
+    "orientation": "landscape",
+    "width": 7087,
+    "height": 4418,
+    "format": "webp"
+  },
+  {
+    "category": "activity",
+    "file": "assets/works/replacement/activity-11.webp",
+    "title": "融创挂画创意海报",
+    "orientation": "portrait",
+    "width": 1417,
+    "height": 1984,
+    "format": "webp"
+  },
+  {
+    "category": "activity",
+    "file": "assets/works/replacement/activity-12.webp",
+    "title": "融创开业签到墙",
+    "orientation": "landscape",
+    "width": 984,
+    "height": 640,
+    "format": "webp"
+  },
+  {
+    "category": "activity",
+    "file": "assets/works/replacement/activity-13.webp",
+    "title": "融创开业游戏kt板",
+    "orientation": "portrait",
+    "width": 733,
+    "height": 978,
+    "format": "webp"
+  },
+  {
+    "category": "activity",
+    "file": "assets/works/replacement/activity-14.webp",
+    "title": "双十二图书换卷公益框架",
+    "orientation": "portrait",
+    "width": 1080,
+    "height": 1920,
+    "format": "webp"
+  },
+  {
+    "category": "activity",
+    "file": "assets/works/replacement/activity-15.webp",
+    "title": "双十二主视觉",
+    "orientation": "landscape",
+    "width": 3508,
+    "height": 1906,
+    "format": "webp"
+  },
+  {
+    "category": "activity",
+    "file": "assets/works/replacement/activity-16.webp",
+    "title": "为公益发声kt板",
+    "orientation": "landscape",
+    "width": 1388,
+    "height": 979,
+    "format": "webp"
+  },
+  {
+    "category": "activity",
+    "file": "assets/works/replacement/activity-17.webp",
+    "title": "雅美佳新年红包",
+    "orientation": "portrait",
+    "width": 9632,
+    "height": 10867,
+    "format": "webp"
+  },
+  {
+    "category": "activity",
+    "file": "assets/works/replacement/activity-18.webp",
+    "title": "中高层述职签到处",
+    "orientation": "portrait",
+    "width": 7087,
+    "height": 9449,
+    "format": "webp"
+  },
+  {
+    "category": "activity",
+    "file": "assets/works/replacement/activity-19.webp",
+    "title": "周年庆海报",
+    "orientation": "portrait",
+    "width": 1242,
+    "height": 2141,
+    "format": "webp"
+  },
+  {
+    "category": "space",
+    "file": "assets/works/replacement/space-01.webp",
+    "title": "广花地贴海报",
+    "orientation": "landscape",
+    "width": 1790,
+    "height": 972,
+    "format": "webp"
+  },
+  {
+    "category": "space",
+    "file": "assets/works/replacement/space-02.webp",
+    "title": "广花广告牌",
+    "orientation": "landscape",
+    "width": 1425,
+    "height": 977,
+    "format": "webp"
+  },
+  {
+    "category": "space",
+    "file": "assets/works/replacement/space-03.webp",
+    "title": "国际校区环创设计",
+    "orientation": "landscape",
+    "width": 1809,
+    "height": 769,
+    "format": "webp"
+  },
+  {
+    "category": "space",
+    "file": "assets/works/replacement/space-04.webp",
+    "title": "佳里书屋灯箱",
+    "orientation": "landscape",
+    "width": 4032,
+    "height": 3024,
+    "format": "webp"
+  },
+  {
+    "category": "space",
+    "file": "assets/works/replacement/space-05.webp",
+    "title": "佳里书屋曲面装饰墙",
+    "orientation": "landscape",
+    "width": 4032,
+    "height": 3024,
+    "format": "webp"
+  },
+  {
+    "category": "space",
+    "file": "assets/works/replacement/space-06.webp",
+    "title": "融创米娜灯箱",
+    "orientation": "landscape",
+    "width": 1085,
+    "height": 692,
+    "format": "webp"
+  },
+  {
+    "category": "space",
+    "file": "assets/works/replacement/space-07.webp",
+    "title": "融创校区开业灯箱",
+    "orientation": "landscape",
+    "width": 1310,
+    "height": 797,
+    "format": "webp"
+  },
+  {
+    "category": "space",
+    "file": "assets/works/replacement/space-08.webp",
+    "title": "融创校区理念墙",
+    "orientation": "landscape",
+    "width": 847,
+    "height": 542,
+    "format": "webp"
+  },
+  {
+    "category": "space",
+    "file": "assets/works/replacement/space-09.webp",
+    "title": "融创校区企业发展墙",
+    "orientation": "landscape",
+    "width": 976,
+    "height": 614,
+    "format": "webp"
+  },
+  {
+    "category": "space",
+    "file": "assets/works/replacement/space-10.webp",
+    "title": "融创校区暑期灯箱",
+    "orientation": "landscape",
+    "width": 785,
+    "height": 525,
+    "format": "webp"
+  },
+  {
+    "category": "space",
+    "file": "assets/works/replacement/space-11.webp",
+    "title": "艺童萌软装发光logo",
+    "orientation": "portrait",
+    "width": 841,
+    "height": 979,
+    "format": "webp"
+  },
+  {
+    "category": "space",
+    "file": "assets/works/replacement/space-12.webp",
+    "title": "园玄校区3E理念墙",
+    "orientation": "landscape",
+    "width": 1001,
+    "height": 637,
+    "format": "webp"
+  }
 ]
